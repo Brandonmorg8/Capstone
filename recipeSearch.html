@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <h1>Recipe Search</h1><input type="text" id="recipe">
+	<button type="button" onclick="myFunction()">
+	Submit
+	</button>
+	</head>
+	<body>
+	<ul></ul>
+	<script>
+		function myFunction() {
+		const apiKey = "1ddb997733f84f89b40d10939f925cb6";
+		var qTerm = document.getElementById("recipe").value;
+		fetch('https://api.spoonacular.com/recipes/complexSearch?apiKey=' + apiKey + '&query=' + qTerm)
+		.then(res => {
+			return res.json();
+		})
+		.then(data => {
+			console.log(data);
+			data.forEach(user => {
+				const markup = '<li>${user.title}</li>';
+				
+				document.querySelector('ul').insertAdjacentHTML('beforeend',markup);
+			});
+		})
+		.catch(error => console.log(error));
+		}
+	</script>
+	</body>
+</html>
