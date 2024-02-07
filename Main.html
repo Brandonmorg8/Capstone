@@ -1,0 +1,81 @@
+
+<!-- The first page will be to sign up-->
+<!-- The second page is the Main Page for the customer to search for recipes-->
+<!-- The last page is the Team 4_0 to link / hyperlink to additonal recipes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search the recipes</title>
+
+<!-- Include for - key/bin/fetch data-->
+ <script src="Main2.js"></script>
+
+ 
+
+    <!-- Link to CSS file to manipulate style and layout -->
+ <link rel="stylesheet" href="Main1.css">
+
+
+
+ <!--style with a google font-->
+ <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <style>
+      body {
+        font-family: 'Crimson Pro', serif;
+        font-size: 25px;
+      }
+    </style>
+
+</head>
+<body>
+
+    <!--heading 1-->
+<div class="header">
+<h1>An Insight into Nutritional Meal Planning</h1>
+</div>
+
+<!--Label-->
+<div class="label">
+<td <label for="site-search">Search Nutritional Recipes By:  "  " .</label>
+</div>
+
+<!--Input search and set to keep centered-->
+<div class="inputs">
+
+<!--Note: Decide what search field the team will utilize such as ID-->
+<input type="search" id="site-search" name="q" />
+<button onclick="myFunction()">Search</button>
+
+<!--Input / Submit area-->
+<input type="submit" value="Submit"/>
+
+
+<!--Add/Remove button items-->
+<div class = "menu">
+<menu>
+<li><button onclick="add()">Add Items</button></li>
+<li><button onclick="remove()">Remove Items</button></li>
+</menu> 
+</div> 
+
+
+<!--heading 2 and image-->
+<h2>Tasty: Salmon</h2>
+<img class="image"<img src="./MapleGlazedSalmon.jpg" alt="Salmon" >
+
+<!-- Event Listener aleart / in JS file/ disable for now 
+<script src="/Main2.js"></script> -->
+
+<!-- Need to use fetch API to retrieve data or jQuery to get external data-->
+
+
+
+  
+
+  
+</body>
+</html>

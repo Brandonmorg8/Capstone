@@ -1,0 +1,99 @@
+
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+label {
+    display: block;
+    font:
+      1rem 'Fira Sans',
+      sans-serif;
+  }
+  
+  input,
+  label {
+    margin: 0.4rem 0;
+  }
+
+  menu,
+li {
+  display: flex;
+  list-style: none;
+  padding: 2;
+  flex-grow: 10;
+  width: 300px;
+  height:25px;
+}
+
+ 
+/* Heading text - div */ 
+.text {
+  color: black;
+  text-align: center;
+  font-size : 30px;
+  font:verdana;
+  padding: 10px;
+  line-height : 10px; /* decrease spaces between word */  
+}
+.inputs {
+  color: black;
+  text-align: center;
+  font-size : 30px;
+  font:verdana;
+  
+}
+.addButton {
+  color: black;
+  text-align:right ;
+  padding: 10px;
+  font-size : 50px;
+  font:verdana;
+}
+h2 {
+  font-family:
+  'Crimson Pro',
+    monospace;
+  font-size: 1em;
+  margin: 1em 0 0.3em;
+}
+
+   /* The border around image */ 
+img {
+  width: 150px;
+  height: 100px;
+  border: 1px solid #000;
+  margin: 10px 0;
+}
+
+.narrow {
+  width: 100px;
+  height: 150px;
+}
+
+.image {
+  object-fit: cover;
+  width: 500px;
+  height: 350px;
+}
+
+.label {
+  font-family:
+  'Crimson Pro',
+    monospace;
+    text-align: center;
+    color: red;
+}
+
+
+
+
+
